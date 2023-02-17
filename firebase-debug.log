@@ -1,0 +1,57 @@
+[debug] [2023-02-17T00:30:42.146Z] ----------------------------------------------------------------------
+[debug] [2023-02-17T00:30:42.147Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ibrahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-17T00:30:42.148Z] CLI Version:   11.23.1
+[debug] [2023-02-17T00:30:42.148Z] Platform:      win32
+[debug] [2023-02-17T00:30:42.148Z] Node Version:  v18.14.1
+[debug] [2023-02-17T00:30:42.148Z] Time:          Fri Feb 17 2023 03:30:42 GMT+0300 (Arabian Standard Time)
+[debug] [2023-02-17T00:30:42.148Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-17T00:30:42.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-17T00:30:42.186Z] > authorizing via signed-in user (karem0alhaj@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Ibrahim\Desktop\1st
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-17T00:30:50.431Z] Using project from CLI flag: twitter-clone-5c206
+[debug] [2023-02-17T00:30:50.432Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-5c206 [none]
+[debug] [2023-02-17T00:30:50.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-5c206 200
+[debug] [2023-02-17T00:30:50.966Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-5c206 {"projectId":"twitter-clone-5c206","projectNumber":"710722117652","displayName":"twitter-clone","name":"projects/twitter-clone-5c206","resources":{"hostingSite":"twitter-clone-5c206","realtimeDatabaseInstance":"twitter-clone-5c206-default-rtdb"},"state":"ACTIVE","etag":"1_150ffd64-4285-4bbb-90a1-6e4db5c3d68f"}
+[info] i  Using project twitter-clone-5c206 (twitter-clone) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Ibrahim\Desktop\1st is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=361089198&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-02-17T00:30:51.821Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-02-17T00:30:51.821Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-02-17T00:30:52.255Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-02-17T00:30:52.255Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-02-17T00:30:52.257Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-02-17T00:30:52.708Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-02-17T00:30:52.708Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ibrahemxalhaj","id":125618184,"node_id":"U_kgDOB3zICA","avatar_url":"https://avatars.githubusercontent.com/u/125618184?v=4","gravatar_id":"","url":"https://api.github.com/users/ibrahemxalhaj","html_url":"https://github.com/ibrahemxalhaj","followers_url":"https://api.github.com/users/ibrahemxalhaj/followers","following_url":"https://api.github.com/users/ibrahemxalhaj/following{/other_user}","gists_url":"https://api.github.com/users/ibrahemxalhaj/gists{/gist_id}","starred_url":"https://api.github.com/users/ibrahemxalhaj/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ibrahemxalhaj/subscriptions","organizations_url":"https://api.github.com/users/ibrahemxalhaj/orgs","repos_url":"https://api.github.com/users/ibrahemxalhaj/repos","events_url":"https://api.github.com/users/ibrahemxalhaj/events{/privacy}","received_events_url":"https://api.github.com/users/ibrahemxalhaj/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2023-02-17T00:19:50Z","updated_at":"2023-02-17T00:19:50Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ibrahemxalhaj 
+[info] 
